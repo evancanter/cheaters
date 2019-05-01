@@ -87,10 +87,11 @@ class HashMap {
                 }
                 
             }
-            
             vector<string> outputs;
             for(int i =0;i<files.size();i++) {
-                for(int j=0;j<i-1;j++) {
+
+                for(int j=0;j<i;j++) {
+                    
                     int col=collisions[i][j];
                     if(col>=200&&col<1000) {
                         string out=" "+std::to_string(col)+ " : "+files[j]+", "+files[i];

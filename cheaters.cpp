@@ -62,7 +62,6 @@ void chunk(string dir,vector<string> &files,int n,HashMap &h) {
     }
 
     for(vector<string>::iterator i=files.begin();i!=files.end();++i) {
-
         ifstream infile;
         infile.open(dir+(*i),ios::in);
         vector<string> words;
@@ -85,13 +84,6 @@ void chunk(string dir,vector<string> &files,int n,HashMap &h) {
         
         words.clear();
         infile.close();
-    }
-}
-
-void printCollisions(vector<string> files,HashMap h) {
-    int collisions[files.size()][files.size()];
-    for(int i=0;i<files.size();i++) {
-
     }
 }
 
