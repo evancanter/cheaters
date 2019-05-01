@@ -94,7 +94,7 @@ class HashMap {
                     
                     int col=collisions[i][j];
                     if(col>=200&&col<1000) {
-                        string out=" "+std::to_string(static_cast<long long>(col)+ " : "+files[j]+", "+files[i];
+                        string out=" "+std::to_string(static_cast<long long>(col))+ " : "+files[j]+", "+files[i];
                         outputs.push_back(out);
                     }
                     else if (col>=200) {
